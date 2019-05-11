@@ -1,3 +1,7 @@
+import findspark
+findspark.init()
+import pyspark
+sc = pyspark.SparkContext(appName="demoPySpark")
 # Create an RDD from a list of words
 RDD = sc.parallelize(["Spark", "is", "a", "framework", "for", "Big Data processing"])
 
