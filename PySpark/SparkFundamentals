@@ -1,2 +1,3 @@
 1) filter() operation does not mutate the existing fileRDD. Instead, it returns a pointer to an entirely new RDD
 
+2)reduceByKey() transformation merges the values for each key using an associative reduce function.
