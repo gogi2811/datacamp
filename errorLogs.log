@@ -1,0 +1,24 @@
+Error: Cannot create /etc/ins-rum-spark-sql/serviceconf/query; parent directory /etc/ins-rum-spark-sql/serviceconf does not exist
+Error: /Stage[main]/Rum_sql::Rum_sql_etl/File[/etc/ins-rum-spark-sql/serviceconf/query]/ensure: change from absent to directory failed: Cannot create /etc/ins-rum-spark-sql/serviceconf/query; parent directory /etc/ins-rum-spark-sql/serviceconf does not exist
+Notice: /Stage[main]/Rum_sql::Rum_sql_etl/File[/etc/ins-rum-spark-sql/serviceconf/query/sql.yaml]: Dependency File[/etc/ins-rum-spark-sql/serviceconf/query] has failures: true
+Warning: /Stage[main]/Rum_sql::Rum_sql_etl/File[/etc/ins-rum-spark-sql/serviceconf/query/sql.yaml]: Skipping because of failed dependencies
+Error: Execution of '/usr/bin/apt-get -q -y -o DPkg::Options::=--force-confold install ins-rum-spark-sql' returned 100: Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package ins-rum-spark-sql
+Error: /Stage[main]/Rum_sql::Rum_sql_etl/Spark_sql::Spark_sql_job[ins-rum-spark-sql]/Package[ins-rum-spark-sql]/ensure: change from purged to present failed: Execution of '/usr/bin/apt-get -q -y -o DPkg::Options::=--force-confold install ins-rum-spark-sql' returned 100: Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package ins-rum-spark-sql
+Error: Could not set 'present' on ensure: No such file or directory - /etc/ins-rum-spark-sql/serviceconf/conf.properties20190320-62549-1p681ef.lock at 49:/var/puppet/environments/production/modules/spark_sql/manifests/spark_sql_job.pp
+Error: Could not set 'present' on ensure: No such file or directory - /etc/ins-rum-spark-sql/serviceconf/conf.properties20190320-62549-1p681ef.lock at 49:/var/puppet/environments/production/modules/spark_sql/manifests/spark_sql_job.pp
+Wrapped exception:
+No such file or directory - /etc/ins-rum-spark-sql/serviceconf/conf.properties20190320-62549-1p681ef.lock
+Error: /Stage[main]/Rum_sql::Rum_sql_etl/Spark_sql::Spark_sql_job[ins-rum-spark-sql]/File[/etc/ins-rum-spark-sql/serviceconf/conf.properties]/ensure: change from absent to present failed: Could not set 'present' on ensure: No such file or directory - /etc/ins-rum-spark-sql/serviceconf/conf.properties20190320-62549-1p681ef.lock at 49:/var/puppet/environments/production/modules/spark_sql/manifests/spark_sql_job.pp
+Notice: /Stage[main]/Ins_puppettools_agent/Exec[renew_vault_certificate]/returns: executed successfully
+Error: Could not set 'present' on ensure: No such file or directory - /etc/ins-rum-spark-sql/serviceconf/log4j.xml20190320-62549-1ujm2tx.lock at 59:/var/puppet/environments/production/modules/spark_sql/manifests/spark_sql_job.pp
+Error: Could not set 'present' on ensure: No such file or directory - /etc/ins-rum-spark-sql/serviceconf/log4j.xml20190320-62549-1ujm2tx.lock at 59:/var/puppet/environments/production/modules/spark_sql/manifests/spark_sql_job.pp
+Wrapped exception:
+No such file or directory - /etc/ins-rum-spark-sql/serviceconf/log4j.xml20190320-62549-1ujm2tx.lock
+Error: /Stage[main]/Rum_sql::Rum_sql_etl/Spark_sql::Spark_sql_job[ins-rum-spark-sql]/File[/etc/ins-rum-spark-sql/serviceconf/log4j.xml]/ensure: change from absent to present failed: Could not set 'present' on ensure: No such file or directory - /etc/ins-rum-spark-sql/serviceconf/log4j.xml20190320-62549-1ujm2tx.lock at 59:/var/puppet/environments/production/modules/spark_sql/manifests/spark_sql_job.pp
+Notice: Finished catalog run in 14.08 seconds

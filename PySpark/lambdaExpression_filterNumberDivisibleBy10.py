@@ -1,5 +1,9 @@
 # Print my_list2 in the console
 
+import findspark
+findspark.init()
+import pyspark
+sc = pyspark.SparkContext(appName="demoPySpark")
 my_list2 = [20,1000,22.35,80]
 print("Input list is:", my_list2)
 

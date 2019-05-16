@@ -1,4 +1,8 @@
 # Print my_list in the console
+import findspark
+findspark.init()
+import pyspark
+sc = pyspark.SparkContext(appName="demoPySpark")
 my_list = [1,2,3,4]
 print("Input list is", my_list)
 
