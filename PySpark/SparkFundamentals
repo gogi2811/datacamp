@@ -1,0 +1,2 @@
+1) filter() operation does not mutate the existing fileRDD. Instead, it returns a pointer to an entirely new RDD
+
